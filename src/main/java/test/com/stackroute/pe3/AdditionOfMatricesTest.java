@@ -1,4 +1,4 @@
-package main.test.com.stackroute.pe3;
+package main.java.test.com.stackroute.pe3;
 
 import main.java.com.stackroute.pe3.AdditionOfMatrices;
 import org.junit.After;

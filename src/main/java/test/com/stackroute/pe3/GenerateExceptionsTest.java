@@ -1,7 +1,6 @@
-package main.test.com.stackroute.pe3;
+package main.java.test.com.stackroute.pe3;
 
 import main.java.com.stackroute.pe3.GenerateExceptions;
-import main.java.com.stackroute.pe3.ThrowException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
