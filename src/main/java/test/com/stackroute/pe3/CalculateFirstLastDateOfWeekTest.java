@@ -14,26 +14,26 @@ public class CalculateFirstLastDateOfWeekTest {
     String actualResult;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         calculateFirstLastDateOfWeek = new CalculateFirstLastDateOfWeek();
     }
 
     @Test
-    public void checkWhetherTheFirstDateOfWeekIsCorrect() {
+    public void returnsFirstDateOfWeek() {
         actualResult = calculateFirstLastDateOfWeek.calculateFirstDateOfWeek();
         expectedResult = "Mon 01/07/2019";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheLastDateOfWeekIsCorrect() {
+    public void returnsLastDateOfWeek() {
         actualResult = calculateFirstLastDateOfWeek.calculateLastDateOfWeek();
         expectedResult = "Sun 07/07/2019";
         assertEquals(expectedResult, actualResult);
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
         calculateFirstLastDateOfWeek = null;
     }
 }

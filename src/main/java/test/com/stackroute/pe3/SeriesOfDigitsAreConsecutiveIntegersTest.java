@@ -19,13 +19,13 @@ public class SeriesOfDigitsAreConsecutiveIntegersTest {
     }
 
     @Test
-    public void checkWhetherTheSeriesOfDigitsAreConsecutiveNumbers() {
+    public void givenIntegerArrayReturnsFalse() {
         actualResult = seriesOfDigitsAreConsecutiveIntegers.checkWhetherTheNumbersAreConsecutive(new int[]{98, 96, 95, 94, 93});
         assertFalse(actualResult);
     }
 
     @Test
-    public void checkWhetherTheSeriesOfDigitsAreNotConsecutiveNumbers() {
+    public void givenIntegerArrayReturnsTrue() {
         actualResult = seriesOfDigitsAreConsecutiveIntegers.checkWhetherTheNumbersAreConsecutive(new int[]{54, 53, 52, 51, 50, 49, 48});
         assertTrue(actualResult);
     }

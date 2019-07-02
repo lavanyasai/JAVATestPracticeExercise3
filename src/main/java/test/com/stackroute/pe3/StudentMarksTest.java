@@ -19,14 +19,14 @@ public class StudentMarksTest {
     }
 
     @Test
-    public void checkWhetherTheGradeIsWithinTheRange() {
+    public void givenGradesArrayReturnsWhetherGradesAreCorrect() {
         actualResult = studentMarks.checkWhetherTheValuesAreInRange(5, new int[] {10, 20, 30, 40, 50});
         expectedResult =  "Grades are correct";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheExceptionIsRaised() {
+    public void givenGradesArrayReturnsException() {
         actualResult = studentMarks.checkWhetherTheValuesAreInRange(5, new int[] {10, 20, 300, 40, 50});
         expectedResult =  "Exception";
         assertEquals(expectedResult, actualResult);

@@ -6,27 +6,30 @@ Generate exceptions of type NegativeArraySizeException, IndexOutOfBoundsExceptio
 
 public class GenerateExceptions {
     public String generateNegativeArraySizeException() {
+        String result = null;
         int arraySize = -8;
         try {
             int[] array = new int[arraySize];
         } catch (NegativeArraySizeException ex) {
-            return "Negative Array Size Exception";
+            result = "Negative Array Size Exception";
         }
-        return null;
+        return result;
     }
 
     public String generateIndexOutOfBoundsException() {
+        String result = null;
         int arraySize = 5;
         try {
             int[] array = new int[arraySize];
             System.out.println(array[8]);
         } catch (IndexOutOfBoundsException ex) {
-            return "Index Out Of Bounds Exception";
+            result = "Index Out Of Bounds Exception";
         }
-        return null;
+        return result;
     }
 
     public String generateNullPointerException() {
+        String result = null;
         String string = null;
         try
         {
@@ -34,8 +37,8 @@ public class GenerateExceptions {
                 System.out.print("Same");
             }
         } catch (NullPointerException ex) {
-            return  "Null Pointer Exception";
+            result = "Null Pointer Exception";
         }
-        return null;
+        return result;
     }
 }

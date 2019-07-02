@@ -19,21 +19,21 @@ public class GenerateExceptionsTest {
     }
 
     @Test
-    public void checkWhetherTheNegativeArraySizeExceptionIsRaised() {
+    public void returnsNegativeArraySizeException() {
         actualResult = generateExceptions.generateNegativeArraySizeException();
         expectedResult = "Negative Array Size Exception";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheIndexOutOfBoundsExceptionIsRaised() {
+    public void returnsIndexOutOfBoundsException() {
         actualResult = generateExceptions.generateIndexOutOfBoundsException();
         expectedResult = "Index Out Of Bounds Exception";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheNullPointerExceptionIsRaised() {
+    public void returnsNullPointerException() {
         actualResult = generateExceptions.generateNullPointerException();
         expectedResult = "Null Pointer Exception";
         assertEquals(expectedResult, actualResult);

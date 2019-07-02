@@ -19,7 +19,7 @@ public class ThrowExceptionTest {
     }
 
     @Test
-    public void checkWhetherTheExceptionIsRaised() {
+    public void givenStringReturnsRaiseException() {
         actualResult = throwException.raiseException("Raise Exception");
         expectedResult = "Raise Exception" + "\n" + "Finally";
         assertEquals(expectedResult, actualResult);

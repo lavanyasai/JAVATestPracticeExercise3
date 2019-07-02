@@ -19,14 +19,14 @@ public class LoopAroundAndRemoveTheVowelsTest {
     }
 
     @Test
-    public void checkWhetherTheVowelsAreRemoved() {
+    public void givenStringsReturnsStringsWithoutVowels() {
         actualResult = loopAroundAndRemoveTheVowels.removeTheVowels(new String[] {"India", "United States", "Germany", "Egypt"});
         expectedResult = "Ind\n" + "Untd Stts\n" + "Grmny\n" + "Egypt\n";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheExceptionIsRaisedWhenOtherInputsAreGiven() {
+    public void givenNumberAsStringReturnsNumber() {
         actualResult = loopAroundAndRemoveTheVowels.removeTheVowels(new String[] {"12345"});
         expectedResult = "12345\n";
         assertEquals(expectedResult, actualResult);

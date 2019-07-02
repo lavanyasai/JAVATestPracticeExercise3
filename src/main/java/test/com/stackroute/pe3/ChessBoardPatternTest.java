@@ -19,7 +19,7 @@ public class ChessBoardPatternTest {
     }
 
     @Test
-    public void checkWhetherThePatternIsCorrect() {
+    public void returnsChessBoardPattern() {
         actualResult = chessBoardPattern.generatePattern();
         expectedResult = "WW|BB|WW|BB|WW|BB|WW|BB|\n" +
                 "BB|WW|BB|WW|BB|WW|BB|WW|\n" +
